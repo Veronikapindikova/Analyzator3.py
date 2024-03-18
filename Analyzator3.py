@@ -94,9 +94,4 @@ if 1 <= int(enter) <= 3:
             print("-" * 45)
             for length, frequency in sorted(word_lengths.items()):
                 print(f"{length:^4}|{'*' * frequency:17}\t|{frequency:}")
-        if enter == 1:
-            analyze_text(texts[0])
-        elif enter == 2:
-            analyze_text(texts[1])
-        elif enter == 3:     
-            analyze_text(texts[2])  
+         analyze_text(texts[enter - 1])
